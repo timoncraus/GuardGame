@@ -60,6 +60,7 @@
     <Compile Include="Assets\Code2.cs" />
     <Compile Include="Assets\Code4.cs" />
     <Compile Include="Assets\Code5.cs" />
+    <Compile Include="Assets\Code6.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
