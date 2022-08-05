@@ -53,11 +53,12 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Code1.cs" />
-    <Compile Include="Assets\Code2.cs" />
-    <Compile Include="Assets\Code3.cs" />
     <Compile Include="Assets\Warrior.cs" />
+    <Compile Include="Assets\Code1.cs" />
+    <Compile Include="Assets\Code3.cs" />
     <Compile Include="Assets\Arena.cs" />
+    <Compile Include="Assets\Code2.cs" />
+    <Compile Include="Assets\Code4.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
