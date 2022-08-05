@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+
 
 public class Code4 : MonoBehaviour
 {
     public string riddle;
     // Start is called before the first frame update
     void Start()
-    {
-        riddle = "2Boo1Aoo";
+    { 
+        riddle = "5выполнил6это2думаю,3что7задание1Я4я";
         Debug.Log(Decode(riddle));
     }
     string Decode(string riddle)
@@ -16,17 +18,36 @@ public class Code4 : MonoBehaviour
         var dict = new Dictionary<int, string>();
         int paramNum;
         string paramWord;
-        riddle = cutsOffAPart(riddle, out paramNum, out paramWord);
-        dict.Add(paramNum, paramWord);
-
-        riddle = cutsOffAPart(riddle, out paramNum, out paramWord);
-        dict.Add(paramNum, paramWord);
-        foreach(var entry in dict)
+        while(riddle.Length > 0)
         {
-            Debug.Log(entry.Key.ToString() + " " + entry.Value.ToString());
+            riddle = cutsOffAPart(riddle, out paramNum, out paramWord);
+            dict.Add(paramNum, paramWord);
+        }
+        //foreach(var entry in dict)
+        //{
+        //    Debug.Log(entry.Key.ToString() + " " + entry.Value.ToString());
+        //}
+
+        int[] listKeys = new int[dict.Keys.Count];
+        int i = 0;
+        foreach(int key in dict.Keys)
+        {
+            listKeys[i] = key;
+            i += 1;
+        }
+        var sortedListKeys = listKeys.OrderBy(n => n);
+        string answer = "";
+        bool first = true;
+        foreach(int key in sortedListKeys)
+        {
+            if (!first) {
+                answer += " ";
+            }
+            answer += dict[key];
+            first = false;
         }
 
-        return "";
+        return answer;
     }
     string cutsOffAPart(string riddle, out int myNumber, out string myWord)
     {
