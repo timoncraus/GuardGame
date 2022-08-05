@@ -10,7 +10,6 @@ public class Code4 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     { 
-        riddle = "5выполнил6это2думаю,3что7задание1Я4я";
         Debug.Log(Decode(riddle));
     }
     string Decode(string riddle)
