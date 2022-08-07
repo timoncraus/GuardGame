@@ -18,67 +18,38 @@ public class Code7 : MonoBehaviour
     }
     void Start()
     {
-        WeekDay day;
-        bool gotError = false;
-        switch (weekNumber) {
+         WhatDayWeek(weekNumber);
+    }
+    WeekDay WhatDayWeek(int day)
+    {
+        WeekDay d;
+        switch (day) {
             case 1:
-                day = WeekDay.Monday;
+                d = WeekDay.Monday;
                 break;
             case 2:
-                day = WeekDay.Tuesday;
+                d = WeekDay.Tuesday;
                 break;
             case 3:
-                day = WeekDay.Wednesday;
+                d = WeekDay.Wednesday;
                 break;
             case 4:
-                day = WeekDay.Thursday;
+                d = WeekDay.Thursday;
                 break;
             case 5:
-                day = WeekDay.Friday;
+                d = WeekDay.Friday;
                 break;
             case 6:
-                day = WeekDay.Saturday;
+                d = WeekDay.Saturday;
                 break;
             case 7:
-                day = WeekDay.Sunday;
+                d = WeekDay.Sunday;
                 break;
             default:
-                gotError = true;
-                day = WeekDay.Monday;
-                Debug.Log("Ошибка: введите число от 1 до 7");
-                break;
-        }
-        if (!gotError)
-        {
-            Debug.Log(whatDayWeek(day));
-        }  
-    }
-    string whatDayWeek(WeekDay day)
-    {
-        switch (day) {
-            case WeekDay.Monday:
-                return "Понедельник";
-            case WeekDay.Tuesday:
-                return "Вторник";
-            case WeekDay.Wednesday:
-                return "Среда";
-            case WeekDay.Thursday:
-                return "Четверг";
-            case WeekDay.Friday:
-                return "Пятница";
-            case WeekDay.Saturday:
-                return "Суббота";
-            case WeekDay.Sunday:
-                return "Воскресенье";
-            default:
-                return "";
+                return throw new Exception("Wrong day of the week");
+               Debug.Log(d.ToString());
+                return d;
         }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
