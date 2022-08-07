@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Code3 : MonoBehaviour
+public class MiddleTask3 : MonoBehaviour
 {
+    //public string inputStr;
+    public int[] inputList;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(EvenSum(new int[] {1, 3, 5, 77, 43}));
+        //int[] list = System.Array.ConvertAll(inputStr.Split(' '), s => int.Parse(s));
+        Debug.Log(EvenSum(inputList));
     }
     int EvenSum(int[] list)
     {
@@ -26,11 +29,5 @@ public class Code3 : MonoBehaviour
             return -1;
         }
         return sum;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

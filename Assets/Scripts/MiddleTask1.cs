@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Code5 : MonoBehaviour
+public class MiddleTask1 : MonoBehaviour
 {
     public string inputStr;
     // Start is called before the first frame update
@@ -23,11 +23,5 @@ public class Code5 : MonoBehaviour
         }
         return maxNum;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

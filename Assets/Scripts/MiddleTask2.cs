@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Code2 : MonoBehaviour
+public class MiddleTask2 : MonoBehaviour
 {
     public int n;
     public int x;
@@ -25,11 +25,5 @@ public class Code2 : MonoBehaviour
             }
         }
         return answer;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

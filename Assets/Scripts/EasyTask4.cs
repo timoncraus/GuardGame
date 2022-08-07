@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Code8 : MonoBehaviour
+public class EasyTask4 : MonoBehaviour
 {
     public float kilos1;
     public float pounds1; 
@@ -19,11 +19,5 @@ public class Code8 : MonoBehaviour
     float toKilos(float pounds)
     {
         return pounds*453/1000;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

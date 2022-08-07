@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 
-public class Code4 : MonoBehaviour
+public class HardTask : MonoBehaviour
 {
     public string riddle;
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class Code4 : MonoBehaviour
         string paramWord;
         while(riddle.Length > 0)
         {
-            riddle = cutsOffAPart(riddle, out paramNum, out paramWord);
+            riddle = cutsOffFirstPart(riddle, out paramNum, out paramWord);
             dict.Add(paramNum, paramWord);
         }
         //foreach(var entry in dict)
@@ -48,7 +48,7 @@ public class Code4 : MonoBehaviour
 
         return answer;
     }
-    string cutsOffAPart(string riddle, out int myNumber, out string myWord)
+    string cutsOffFirstPart(string riddle, out int myNumber, out string myWord)
     {
         int endNumIndex = 1;
         while (isNumber(riddle.Substring(0, endNumIndex)))
@@ -90,5 +90,4 @@ public class Code4 : MonoBehaviour
             return false;
         }
     }
-
 }

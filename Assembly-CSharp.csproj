@@ -53,18 +53,18 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Code4.cs" />
-    <Compile Include="Assets\Code5.cs" />
-    <Compile Include="Assets\Warrior.cs" />
-    <Compile Include="Assets\Code1.cs" />
-    <Compile Include="Assets\Code3.cs" />
-    <Compile Include="Assets\Arena.cs" />
-    <Compile Include="Assets\Code2.cs" />
-    <Compile Include="Assets\Code6.cs" />
-    <Compile Include="Assets\Code7.cs" />
-    <Compile Include="Assets\Code8.cs" />
-    <Compile Include="Assets\Code9.cs" />
-    <Compile Include="Assets\Code10.cs" />
+    <Compile Include="Assets\Scripts\HardTask.cs" />
+    <Compile Include="Assets\Scripts\MiddleTask1.cs" />
+    <Compile Include="Assets\Scripts\MiddleTask4\Warrior.cs" />
+    <Compile Include="Assets\Scripts\EasyTask1.cs" />
+    <Compile Include="Assets\Scripts\EasyTask4.cs" />
+    <Compile Include="Assets\Scripts\MiddleTask3.cs" />
+    <Compile Include="Assets\Scripts\EasyTask5.cs" />
+    <Compile Include="Assets\Scripts\MiddleTask4\Arena.cs" />
+    <Compile Include="Assets\Scripts\MiddleTask2.cs" />
+    <Compile Include="Assets\Scripts\EasyTask6.cs" />
+    <Compile Include="Assets\Scripts\EasyTask3.cs" />
+    <Compile Include="Assets\Scripts\EasyTask2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

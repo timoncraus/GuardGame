@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Code9 : MonoBehaviour
+public class EasyTask2 : MonoBehaviour
 {
     public int x;
     public int y;
@@ -13,15 +13,6 @@ public class Code9 : MonoBehaviour
     }
     bool isDivisor(int x, int y)
     {
-        if(y%x == 0)
-        {
-            return true;
-        }
-        return false;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return y % x == 0;
     }
 }

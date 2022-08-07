@@ -40,10 +40,4 @@ public class Arena : MonoBehaviour
         }
         Debug.Log("Победил " + winner);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
