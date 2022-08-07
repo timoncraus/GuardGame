@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class Code1 : MonoBehaviour
 {
-    public float a;
-    public float b;
-    // Start is called before the first frame update
     void Start()
     {
-        float c = Mathf.Sqrt(a * a + b * b);
-        Debug.Log(a+b+c);
+        Debug.Log(CalculatePerimetr(a, b));
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    private float CalculatePerimetr(float a, float b)
     {
-        
+        float c = Mathf.Sqrt(a * a + b * b);
+        return a+b+c;
     }
 }
