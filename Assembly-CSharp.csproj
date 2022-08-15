@@ -53,18 +53,21 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\HardTask.cs" />
-    <Compile Include="Assets\Scripts\MiddleTask1.cs" />
-    <Compile Include="Assets\Scripts\MiddleTask4\Warrior.cs" />
-    <Compile Include="Assets\Scripts\EasyTask1.cs" />
-    <Compile Include="Assets\Scripts\EasyTask4.cs" />
-    <Compile Include="Assets\Scripts\MiddleTask3.cs" />
-    <Compile Include="Assets\Scripts\EasyTask5.cs" />
-    <Compile Include="Assets\Scripts\MiddleTask4\Arena.cs" />
-    <Compile Include="Assets\Scripts\MiddleTask2.cs" />
-    <Compile Include="Assets\Scripts\EasyTask6.cs" />
-    <Compile Include="Assets\Scripts\EasyTask3.cs" />
-    <Compile Include="Assets\Scripts\EasyTask2.cs" />
+    <Compile Include="Assets\Scripts with tasks\HardTask.cs" />
+    <Compile Include="Assets\Scene with cube\Scripts\Player.cs" />
+    <Compile Include="Assets\Scene with cube\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts with tasks\MiddleTask1.cs" />
+    <Compile Include="Assets\Scripts with tasks\MiddleTask4\Warrior.cs" />
+    <Compile Include="Assets\Scripts with tasks\EasyTask1.cs" />
+    <Compile Include="Assets\Scripts with tasks\EasyTask4.cs" />
+    <Compile Include="Assets\Scripts with tasks\MiddleTask3.cs" />
+    <Compile Include="Assets\Scripts with tasks\EasyTask5.cs" />
+    <Compile Include="Assets\Scripts with tasks\MiddleTask4\Arena.cs" />
+    <Compile Include="Assets\Scripts with tasks\MiddleTask2.cs" />
+    <Compile Include="Assets\Scripts with tasks\EasyTask6.cs" />
+    <Compile Include="Assets\Scripts with tasks\EasyTask3.cs" />
+    <Compile Include="Assets\Scripts with tasks\EasyTask2.cs" />
+    <Compile Include="Assets\Scene with cube\Scripts\Bonus.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
